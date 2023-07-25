@@ -1,0 +1,60 @@
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    background-color: #f4f7fa;
+    color: #000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .card:before,
+  .card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(18, 114, 224, 0.477);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform-origin: center center;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover {
+    background-color: #0f69d7;
+    color: #fff;
+    transform: rotateY(10deg);
+    box-shadow: 0 20px 40px rgb(255, 255, 255);
+  }
+  
+  .card:hover:before,
+  .card:hover:after {
+    opacity: 1;
+  }
+  
+
+
+   body{
+    background-color: #eceff1;
+   }
+
+   #formulario-pergunta{
+    margin-top: 5vh;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
